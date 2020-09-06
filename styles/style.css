@@ -1,97 +1,116 @@
 /**Web fonts**/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
 
 /** Shared style**/
-body{
-font-family: 'Open Sans', sans-serif;
-    font-size:1.25em;
-    background: #FAFAFA;
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    background: rgba(86,133,151,0.12);
 }
-.header{
-    text-align: center;
+.header {
+
     width: 100%;
     margin-bottom: 40px;
+
 }
-h1,h3{
-    font-weight: 700;
+h1,
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+
     text-align: center!important;
+
     margin: 0;
 }
-.row{
+h3 {
+    font-size: 1.953em;
+}
+
+.row {
     margin-bottom: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #DFDFDF;
+    border-bottom: 1px solid #a8a5a5;
 }
 svg,
-img{
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.47);
--moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.47);
-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.47);
-        border-radius: 15px;
+.container img {
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.47);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.47);
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.47);
+    border-radius: 15px;
 }
 /**Navigation**/
-nav .container{
-     position: relative;  
+nav .container {
+    position: relative;
 }
-nav .nav-container{
+nav .nav-container {
     position: absolute;
 }
-nav .nav-item{
+nav .nav-item {
     display: inline-block;
     padding: 20px 25px;
 
-    
 }
-nav .nav-item a{
-       color: #FFFFFF; 
+nav .nav-item a {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+
+    transition: 0.3s ease;
+    color: rgba(255,255,255,0.65);
+
+}
+nav .nav-item a:hover {
+    color: rgb(255, 255, 255);
 }
 /**Jumbotron**/
-.jumbotron{
+.jumbotron {
     background: url('../images/bg2.png')no-repeat bottom;
     background-size: cover;
     height: 600px;
- 
+    border-radius: 0;
 }
 
-.jumbotron div h1{
+.jumbotron div h1 {
     position: relative;
     top: 120px;
     text-align: center;
-    color: #FFFFFF;
+    color: rgba(255,255,255,0.89);
+    font-size: 3.052em;
 }
 
 /** About section **/
 .about-content p {
-    margin: 0px 100px 0 100px;
-    font-size: .9em;
+    margin: 0 100px;
+    font-size: 1em;
+    text-indent: 3.052em;
 }
 
 /** Skills section **/
-.languages{
+.languages {
     margin-bottom: 25px;
 }
 .web-frameworks,
 .languages {
-   text-align: center;
+    text-align: center;
     width: 100%;
 }
-.web-frameworks  div,
-.languages  div{
+.web-frameworks div,
+.languages div {
     display: inline-block;
-   width: 25%;
+    width: 25%;
     max-width: 200px;
     vertical-align: middle;
-    margin: 0 30px;;
+    margin: 0 30px;
 }
 svg {
     max-width: 140px;
 }
-.web-frameworks  img,
-.languages img{
+.web-frameworks img,
+.languages img {
     width: 200px;
 }
-.web-frameworks  p,
-.languages p{
+.web-frameworks p,
+.languages p {
     text-align: left;
     font-weight: 600;
 }
@@ -99,33 +118,167 @@ svg {
 .project-container {
     width: 100%;
     text-align: center;
-}   
-.project-container .project-item{
-display: inline-block;
-  width: 49%;
+}
+.project-container .project-item {
+    display: inline-block;
+    width: 49%;
     vertical-align: middle;
 }
-.project-container .project-item p{
+.project-container .project-item p {
     margin-top: 15px;
 }
+.project-container .project-item img {
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+
+    transition: 0.5s ease;
+
+}
+.project-container .project-item img:hover {
+    opacity: 0.3;
+
+}
 /** Hobbies **/
-.hobbies-container{
+.hobbies {
+    margin-bottom: 0;
+}
+.hobbies-container {
     width: 100%;
     text-align: center;
 }
-.hobbies img{
+.hobbies img {
     max-width: 250px;
     margin: 15px;
 
 }
-.hobbies  .hobby-item{
+.hobbies .hobby-item {
     display: inline-block;
 }
-.hobbies  .hobby-item p{
-   font-size: 0.8em;
+.hobbies .hobby-item p {
+    font-size: 0.8em;
 }
 
+/**Button container **/
+.button-container {
+    text-align: center;
+    padding: 0;
+    font-size: 3.052em;
+    height: 90px;
+}
+
+.button-container > div {
+    width: 100%;
+    color: rgba(0,0,0,0.45);
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding-top: 10px;
+    height: inherit;
+}
+.button-container > div:hover {
+    color: rgb(0,0,0);
+}
+.button-container div > * {
+    width: 100%;
+    text-align: center;
+
+vertical-align: top;
+}
+.button-container span {
+    font-size: 0.3em;
+
+    position: relative;
+    vertical-align: top;
+    top: -50px;
+}
+.button-container i {
+    width: 100%;
+    font-size: 0.6em;
+}
 /** footer**/
-footer span{
+footer span {
     font-size: 0.8em;
+}
+
+
+/** Mobile CSS **/
+
+
+@media (min-width: 576px) {
+  .container {
+      max-width: 1200px;
+  }
+}
+
+@media (max-width: 1176px) {
+  .web-frameworks > div:not(:first-child),
+  .languages > div:not(:first-child) {
+      margin-bottom: 30px !important;
+
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+
+      font-size: 1em;
+
+  }
+
+  .about-content p {
+      margin: 0 75px;
+      text-indent: 15px;
+  }
+  .web-frameworks p,
+  .languages p {
+      text-align: left!important;
+      font-size: 1.2em;
+
+  }
+  .web-frameworks > div:first-child,
+  .languages > div:first-child {
+      width: 100%;
+      display: block;
+
+      max-width: none;
+      margin: 0 0 15px 15px !important;
+      font-size: 1em;
+  }
+  .web-frameworks > div:not(:first-child),
+  .languages > div:not(:first-child) {
+      width: 49%;
+      max-width: none;
+      margin: 0 0 30px !important;
+
+  }
+
+  .button-container > div {
+
+      padding-top: 20px;
+
+  }
+}
+
+@media (max-width: 620px) {
+  nav .nav-item {
+      display: inline-block;
+      padding: 20px 15px;
+
+  }
+  nav .container {
+      padding-left: 0;
+  }
+  nav .nav-container {
+      width: 100%;
+      text-align: center;
+  }
+  .about-content p {
+      margin: 0 50px;
+
+  }
+  .project-container .project-item {
+      width: 100%;
+  }
 }
