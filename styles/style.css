@@ -278,7 +278,10 @@ footer span {
       margin: 0 50px;
 
   }
-  .project-container .project-item {
-      width: 100%;
+    .web-frameworks div,
+.languages div,
+  .project-container .project-item{
+      width: 100%!important;
+      max-width: none;
   }
 }
