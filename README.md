@@ -1,6 +1,6 @@
 # Personal portfolio
 
-# Author
-Arlix Sorto
+# 
+By Arlix Sorto
 <br/>
 Website link: https://ar2694.github.io/ 
