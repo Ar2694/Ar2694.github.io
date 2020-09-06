@@ -13,13 +13,13 @@ $(function () {
 
   $("#project-link").click(function () {
     $("html, body").animate({
-      scrollTop: $("#language").offset().top,
+      scrollTop: $("#project").offset().top,
     });
   });
 
   $("#hobby-link").click(function () {
     $("html, body").animate({
-      scrollTop: $("#project").offset().top,
+      scrollTop: $("#hobby").offset().top,
     });
   });
 
