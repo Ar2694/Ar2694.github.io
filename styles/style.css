@@ -184,7 +184,7 @@ svg {
     width: 100%;
     text-align: center;
 
-vertical-align: top;
+    vertical-align: top;
 }
 .button-container span {
     font-size: 0.3em;
@@ -197,91 +197,145 @@ vertical-align: top;
     width: 100%;
     font-size: 0.6em;
 }
+/** Diagrams **/
+
+.diagrams h1 {
+    text-align: left!important;
+    margin: 30px 0 40px;
+
+}
+.diagrams h4 {
+    text-align: center!important;
+    margin: 0;
+}
+.diagrams .col-6-md img {
+    margin: 15px 11px 35px;
+
+}
+.diagrams .button-container #back-to-home a {
+    color: rgba(0,0,0,0.45);
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.diagrams .button-container #back-to-home a:hover {
+    color: rgba(0,0,0,1);
+}
+.diagrams .button-container #back-to-home a > * {
+    position: relative;
+    top: 20px;
+    left: 5px;
+    float: left;
+    width: auto;
+
+}
+.diagrams .button-container #back-to-home span {
+    top: 25px;
+    left: 12px;
+
+}
 /** footer**/
 footer span {
     font-size: 0.8em;
 }
 
-
 /** Mobile CSS **/
 
-
 @media (min-width: 576px) {
-  .container {
-      max-width: 1200px;
-  }
+    .container {
+        max-width: 1200px;
+    }
 }
+@media (max-width: 1214px) {
 
+    .diagrams .col-6-md {
+
+        text-align: center!important;
+        margin: 0 auto;
+
+    }
+    .diagrams h1 {
+        text-align: left!important;
+        margin: 30px 40px;
+
+    }
+}
 @media (max-width: 1176px) {
-  .web-frameworks > div:not(:first-child),
-  .languages > div:not(:first-child) {
-      margin-bottom: 30px !important;
+    .web-frameworks > div:not(:first-child),
+    .languages > div:not(:first-child) {
+        margin-bottom: 30px !important;
 
-  }
+    }
+    .diagrams .col-6-md {
+
+        text-align: center;
+
+    }
 }
 
 @media (max-width: 720px) {
-  body {
+    body {
 
-      font-size: 1em;
+        font-size: 1em;
 
-  }
+    }
 
-  .about-content p {
-      margin: 0 75px;
-      text-indent: 15px;
-  }
-  .web-frameworks p,
-  .languages p {
-      text-align: left!important;
-      font-size: 1.2em;
+    .about-content p {
+        margin: 0 75px;
+        text-indent: 15px;
+    }
+    .web-frameworks p,
+    .languages p {
+        text-align: left!important;
+        font-size: 1.2em;
 
-  }
-  .web-frameworks > div:first-child,
-  .languages > div:first-child {
-      width: 100%;
-      display: block;
+    }
+    .web-frameworks > div:first-child,
+    .languages > div:first-child {
+        width: 100%;
+        display: block;
 
-      max-width: none;
-      margin: 0 0 15px 15px !important;
-      font-size: 1em;
-  }
-  .web-frameworks > div:not(:first-child),
-  .languages > div:not(:first-child) {
-      width: 49%;
-      max-width: none;
-      margin: 0 0 30px !important;
+        max-width: none;
+        margin: 0 0 15px 15px !important;
+        font-size: 1em;
+    }
+    .web-frameworks > div:not(:first-child),
+    .languages > div:not(:first-child) {
+        width: 49%;
+        max-width: none;
+        margin: 0 0 30px !important;
 
-  }
+    }
 
-  .button-container > div {
+    .button-container > div {
 
-      padding-top: 20px;
+        padding-top: 20px;
 
-  }
+    }
 }
 
 @media (max-width: 620px) {
-  nav .nav-item {
-      display: inline-block;
-      padding: 20px 15px;
+    nav .nav-item {
+        display: inline-block;
+        padding: 20px 15px;
 
-  }
-  nav .container {
-      padding-left: 0;
-  }
-  nav .nav-container {
-      width: 100%;
-      text-align: center;
-  }
-  .about-content p {
-      margin: 0 50px;
+    }
+    nav .container {
+        padding-left: 0;
+    }
+    nav .nav-container {
+        width: 100%;
+        text-align: center;
+    }
+    .about-content p {
+        margin: 0 50px;
 
-  }
+    }
     .web-frameworks div,
-.languages div,
-  .project-container .project-item{
-      width: 100%!important;
-      max-width: none;
-  }
+    .languages div,
+    .project-container .project-item {
+        width: 100%!important;
+        max-width: none;
+    }
 }
