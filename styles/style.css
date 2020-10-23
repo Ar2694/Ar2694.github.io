@@ -206,11 +206,16 @@ svg {
 }
 .diagrams h4 {
     text-align: center!important;
-    margin: 0;
-}
-.diagrams .col-6-md img {
-    margin: 15px 11px 35px;
+font-weight: 600;
 
+}
+.diagrams .col-md-6{
+text-align: center;
+
+}
+.diagrams .col-md-6 img {
+    max-width: 550px;
+width: 100%;
 }
 .diagrams .button-container #back-to-home a {
     color: rgba(0,0,0,0.45);
@@ -249,7 +254,7 @@ footer span {
 }
 @media (max-width: 1214px) {
 
-    .diagrams .col-6-md {
+    .diagrams .col-md-6 {
 
         text-align: center!important;
         margin: 0 auto;
@@ -272,6 +277,11 @@ footer span {
         text-align: center;
 
     }
+
+    .diagrams h4 {
+
+    margin-top: 40px;
+}
 }
 
 @media (max-width: 720px) {
