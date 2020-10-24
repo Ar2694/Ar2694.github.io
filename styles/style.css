@@ -209,11 +209,11 @@ svg {
 font-weight: 600;
 
 }
-.diagrams .col-md-6{
+.diagrams .col-md-4{
 text-align: center;
 
 }
-.diagrams .col-md-6 img {
+.diagrams .col-md-4 img {
     max-width: 550px;
 width: 100%;
 }
@@ -249,7 +249,7 @@ footer span {
 
 @media (min-width: 576px) {
     .container {
-        max-width: 1200px;
+        max-width: 1600px;
     }
 }
 @media (max-width: 1214px) {
@@ -277,10 +277,16 @@ footer span {
         text-align: center;
 
     }
-
+    .diagrams h1{
+        text-align: center!important;
+    }
     .diagrams h4 {
 
     margin-top: 40px;
+}
+    .diagrams .col-md-4 img {
+    max-width: 650px;
+width: 100%;
 }
 }
 
