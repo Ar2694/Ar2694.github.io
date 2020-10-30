@@ -165,6 +165,7 @@ svg {
     padding: 0;
     font-size: 3.052em;
     height: 90px;
+    clear: both;
 }
 
 .button-container > div {
@@ -240,6 +241,9 @@ width: 100%;
     left: 12px;
 
 }
+.row .col-md-4{
+    margin-top: 30px;
+    }
 /** footer**/
 footer span {
     font-size: 0.8em;
@@ -329,6 +333,9 @@ width: 100%;
         padding-top: 20px;
 
     }
+    .row .col-md-4{
+        margin-top:0px;
+        }
 }
 
 @media (max-width: 620px) {
