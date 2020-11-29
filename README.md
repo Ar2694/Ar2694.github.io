@@ -1,4 +1,4 @@
-# Personal portfolio
+# Personal Portfolio
 Arlix Sorto
 <br/>
-Website link: https://ar2694.github.io/ 
+Portfolio link: https://ar2694.github.io/ 
